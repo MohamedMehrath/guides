@@ -5,7 +5,10 @@ This tutorial explains how to set a high CPU priority for any application using 
 **Steps:**
 
 1.  Open the Registry Editor. You can do this by typing "Registry Editor" in the Windows search bar and selecting the application.
-2.  Navigate to the following path in the Registry Editor: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options`.
+2.  Navigate to the following path in the Registry Editor: 
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options
+```
 3.  Open Task Manager and go to the "Details" tab. Find the executable name of the application for which you want to set high CPU priority.
 4.  In the Registry Editor, under "Image File Execution Options", right-click and create a new key. Name this key after the application's executable name (as found in Task Manager).
 5.  Right-click on the newly created application key and create another new key named "perf options".
